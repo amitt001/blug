@@ -31,7 +31,7 @@ Project root has `/posts_base` directory
 
 This creates a **<incremental_number>.txt** file. This file has an incremental number so when running for the first time it creates **1.txt** file and on next run **2.txt**.
 
-The structure of the file is present in `posts_base/base.txt`. It is divided into following sections:
+The structure of the file is present in `posts_base/base.txt`_. It is divided into following sections:
 
 .. code-block:: html
 
@@ -71,3 +71,6 @@ Install requirements:
 
     `pip install -r requirements.txt`
 
+
+
+.. _`posts_base/base.txt`: https://github.com/amitt001/blug/blob/master/posts_base/base.txt
