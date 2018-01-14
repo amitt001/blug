@@ -1,0 +1,53 @@
+image:
+	https://i.imgur.com/dIH5Urd.png
+# end
+title:
+	My Blog Title
+
+# end
+
+link:
+	my-first-blog
+
+# end
+timestamp:
+	now
+
+# end
+
+post:
+	'''
+It's my first blog. This is bold text <bold>I love open-source.<bold>.
+
+Blog post blog post blog post blog post blog post blog post blog post blog post 
+blog post blog post blog post blog post blog post blog post blog post blog post 
+blog post blog post blog post blog post blog post blog post blog post blog post.
+
+Example of code:
+<code>
+In [103]: def f():
+     ...:     print('Open')
+     ...:     # \n
+     ...:     print('Source')
+     ...:
+
+In [104]: f()
+Open
+Source
+<code>
+Open source open source open source open source, Example of <italic>italic text<italic>
+open source open source open source. Example of quote:
+<quote>
+Talk is cheap. Show me the code.
+						- Linus Torvalds
+<quote>
+
+Example of how to add links <link>[https://github.com]Github<link> and the other link example <link>[https://twitter.com/]Twitter<link>. End of blog
+	'''
+
+# end
+
+tags:
+	Python, Open-source
+
+# end

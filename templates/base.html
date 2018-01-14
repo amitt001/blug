@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/social_icons.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/cards.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/blog_post.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Code+Pro">
+    <title>Amit Tripathi</title>
+  </head>
+  <body bgcolor="#FFFFFF">
+    <div id="canvas">
+        <div class="logo">
+            <h1 style="font-family: 'Nunito', serif">
+                <a class="logo-link" href="/">AMIT TRIPATHI</a>
+            </h1>
+        </div>
+        <hr>
+        <div>
+            <nav>
+                <ul>
+                  <li><a href="/about">ABOUT</a></li>
+                  <li><a href="#">PROJECTS</a></li>
+                  <li><a href="/blog">BLOG</a></li>
+                  <li><a href="/travel">TRAVEL</a></li>
+                </ul>
+            </nav>
+        </div>
+        <hr>
+        <div id="body">
+            <div id="blog">
+                {% block content %}
+                {% endblock %}
+                {% if category %}
+                    <div id="tags">
+                        <span id="tag-title">Category: </span>
+                        {% for tag in category %}
+                            <a href="/blog?category={{tag}}">{{tag}}</a>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+    {% if (previous_post_link and previous_post) or (next_post_link and next_post) %}
+        <hr>
+        <div id="blog-footer">
+            <div class="align-left">
+                {% if previous_post_link and previous_post %}
+                    <a href="/blog/{{previous_post_link}}">{{previous_post}}</a>
+                {% endif %}
+            </div>
+            <div class="align-right">
+                {% if next_post_link and next_post %}
+                    <a href="/blog/{{next_post_link}}">{{next_post}}</a>
+                {% endif %}
+            </div>
+        </div>
+    {% endif %}
+        </div>
+        <hr>
+        <footer id="footer">
+            <div id="sociallink">
+                <a href="https://github.com/amitt001" class="fa fa-github" target="_blank"></a>
+                <a href="https://facebook.com/amit.the1" class="fa fa-facebook" target="_blank"></a>
+                <a href="https://twitter.com/amitt019" class="fa fa-twitter" target="_blank"></a>
+                <a href="https://www.linkedin.com/in/amit-tripathi19/" class="fa fa-linkedin" target="_blank"></a>
+                <a href="https://stackoverflow.com/users/4440675/amit-tripathi" class="fa fa-stack-overflow" target="_blank"></a>
+                <a href="mailto:test@gmail.com" class="fa fa-envelope" target="_blank"></a>
+            </div>
+        </footer>
+    </div>
+  </body>
+</html>
