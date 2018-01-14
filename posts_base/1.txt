@@ -2,12 +2,12 @@ image:
 	https://i.imgur.com/dIH5Urd.png
 # end
 title:
-	My Blog Title
+	Blug: A static blog generator
 
 # end
 
 link:
-	my-first-blog
+	blug-a-static-blog-generator
 
 # end
 timestamp:
@@ -17,11 +17,11 @@ timestamp:
 
 post:
 	'''
-It's my first blog. This is bold text <bold>I love open-source.<bold>.
+Blug: A static blog generator. This is bold text <bold>I love open-source.<bold>.
 
-Blog post blog post blog post blog post blog post blog post blog post blog post 
-blog post blog post blog post blog post blog post blog post blog post blog post 
-blog post blog post blog post blog post blog post blog post blog post blog post.
+Blug post blog post Blug post blog post Blug post blog post blog post blog post
+blog post blog post blog post blog post Blug post blog post blog post blog post
+blog post blog post blog post blog post Blug post blog post blog post blog post.
 
 Example of code:
 <code>
