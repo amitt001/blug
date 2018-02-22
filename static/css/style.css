@@ -107,7 +107,7 @@ section header {
 }
 
 /*All the body img elements should have a similar style*/
-#body img {
+/*#body img {
     display: block;
     margin: auto;
     width: 100%;
@@ -119,4 +119,4 @@ section header {
     margin: 2em;
     font-size: 2em;
     color: gray;
-}
+}*/
